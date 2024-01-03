@@ -49,18 +49,21 @@ extension ChatView {
     
     private var navigationArea: some View {
         HStack {
-            Circle()
-                .frame(width: 40, height: 40)
+            Image(systemName: "chevron.backward")
+                .font(.title2)
             Text("Title")
+                .font(.title2.bold())
             Spacer()
-            Circle()
-                .frame(width: 40, height: 40)
-            Circle()
-                .frame(width: 40, height: 40)
+            
+            HStack(spacing: 16) {
+                Image(systemName: "text.magnifyingglass")
+                Image(systemName: "phone")
+                Image(systemName: "line.3.horizontal")
+            }
+            .font(.title2)
         }
-        .foregroundColor(.white)
         .padding()
-        .background(.black.opacity(0.5))
+        .background(.cyan.opacity(0.9))
     }
 }
 
