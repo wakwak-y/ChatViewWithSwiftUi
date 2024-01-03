@@ -21,9 +21,11 @@ struct MessageRow: View {
 
 extension MessageRow {
     private var userThumb: some View {
-        Image(systemName: "person.circle")
+        // Temp image
+        Image("user01")
             .resizable()
             .frame(width: 48, height: 48)
+            .clipShape(Circle())
     }
     
     private var messageText: some View {
