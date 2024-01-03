@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CAD3773A2B4588670004FC7A /* ChatViewWithSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD377392B4588670004FC7A /* ChatViewWithSwiftUiApp.swift */; };
-		CAD3773C2B4588670004FC7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3773B2B4588670004FC7A /* ContentView.swift */; };
 		CAD3773E2B45886A0004FC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD3773D2B45886A0004FC7A /* Assets.xcassets */; };
 		CAD377412B45886A0004FC7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD377402B45886A0004FC7A /* Preview Assets.xcassets */; };
+		CAD377482B45890A0004FC7A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD377472B45890A0004FC7A /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CAD377362B4588670004FC7A /* ChatViewWithSwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatViewWithSwiftUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD377392B4588670004FC7A /* ChatViewWithSwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewWithSwiftUiApp.swift; sourceTree = "<group>"; };
-		CAD3773B2B4588670004FC7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CAD3773D2B45886A0004FC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAD377402B45886A0004FC7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAD377472B45890A0004FC7A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				CAD377392B4588670004FC7A /* ChatViewWithSwiftUiApp.swift */,
-				CAD3773B2B4588670004FC7A /* ContentView.swift */,
+				CAD377472B45890A0004FC7A /* ChatView.swift */,
 				CAD3773D2B45886A0004FC7A /* Assets.xcassets */,
 				CAD3773F2B45886A0004FC7A /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD3773C2B4588670004FC7A /* ContentView.swift in Sources */,
+				CAD377482B45890A0004FC7A /* ChatView.swift in Sources */,
 				CAD3773A2B4588670004FC7A /* ChatViewWithSwiftUiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
