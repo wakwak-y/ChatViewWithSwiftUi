@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ChatView: View {
+    @State private var textFieldtext: String = ""
+    
     var body: some View {
         VStack(spacing: 0) {
             messageArea.overlay(navigationArea ,alignment: .top)
@@ -32,16 +34,27 @@ extension ChatView {
     
     private var inputArea: some View {
         HStack {
-            Circle()
-                .frame(width: 40, height: 40)
-            Circle()
-                .frame(width: 40, height: 40)
-            Circle()
-                .frame(width: 40, height: 40)
-            Capsule()
-                .frame(height: 40)
-            Circle()
-                .frame(width: 40, height: 40)
+            HStack {
+                Image(systemName: "plus")
+                Image(systemName: "camera")
+                Image(systemName: "photo")
+            }
+            .font(.title2)
+            
+            TextField("Aa", text: $textFieldtext)
+                .padding()
+                .background(Color(uiColor: .secondarySystemBackground))
+                .clipShape(Capsule())
+                .overlay(
+                    Image(systemName: "face.smiling")
+                        .font(.title2)
+                        .padding(.trailing)
+                        .foregroundColor(.gray)
+                    , alignment: .trailing
+                )
+            
+            Image(systemName: "mic")
+                .font(.title2)
         }
         .padding()
         .background(.white)
