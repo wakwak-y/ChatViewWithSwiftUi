@@ -17,6 +17,7 @@
 		CAD377542B4650FB0004FC7A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD377532B4650FB0004FC7A /* Chat.swift */; };
 		CAD377572B46525E0004FC7A /* chatData.json in Resources */ = {isa = PBXBuildFile; fileRef = CAD377562B46525E0004FC7A /* chatData.json */; };
 		CAD3775A2B4663970004FC7A /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD377592B4663970004FC7A /* ChatViewModel.swift */; };
+		CAD3775C2B46D29B0004FC7A /* ListIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3775B2B46D29B0004FC7A /* ListIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CAD377532B4650FB0004FC7A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		CAD377562B46525E0004FC7A /* chatData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chatData.json; sourceTree = "<group>"; };
 		CAD377592B4663970004FC7A /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		CAD3775B2B46D29B0004FC7A /* ListIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		CAD3774B2B4592220004FC7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CAD3775B2B46D29B0004FC7A /* ListIView.swift */,
 				CAD377472B45890A0004FC7A /* ChatView.swift */,
 				CAD377492B4592150004FC7A /* MessageRow.swift */,
 			);
@@ -190,6 +193,7 @@
 			files = (
 				CAD3774E2B464AD20004FC7A /* User.swift in Sources */,
 				CAD3775A2B4663970004FC7A /* ChatViewModel.swift in Sources */,
+				CAD3775C2B46D29B0004FC7A /* ListIView.swift in Sources */,
 				CAD377542B4650FB0004FC7A /* Chat.swift in Sources */,
 				CAD377482B45890A0004FC7A /* ChatView.swift in Sources */,
 				CAD377522B464C1E0004FC7A /* Message.swift in Sources */,
