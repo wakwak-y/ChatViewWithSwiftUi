@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChatView: View {
     @State private var textFieldtext: String = ""
+    private let chatViewModel = ChatViewModel()
     
     var body: some View {
         VStack(spacing: 0) {
@@ -22,8 +23,8 @@ extension ChatView {
     private var messageArea: some View {
         ScrollView {
             VStack(spacing: 0) {
-                ForEach(0..<15) { _ in
-                    MessageRow()
+                ForEach(chatViewModel.messages) { message in
+                    MessageRow(message: message)
                 }
             }
             .padding(.horizontal)
