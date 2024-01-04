@@ -23,17 +23,20 @@ struct ChatView: View {
 
 extension ChatView {
     private var messageArea: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                ForEach(chatViewModel.messages) { message in
-                    MessageRow(message: message)
+        ScrollViewReader { proxy in
+            ScrollView {
+                VStack(spacing: 0) {
+                    ForEach(chatViewModel.messages) { message in
+                        MessageRow(message: message)
+                    }
                 }
+                .padding(.horizontal)
+                .padding(.top, 72)
             }
-            .padding(.horizontal)
-            .padding(.top, 72)
+            .background(Color.background)
+            .onTapGesture { textFieldFocused = false }
+            .onAppear { scrollToLast(proxy: proxy) }
         }
-        .background(Color.background)
-        .onTapGesture { textFieldFocused = false }
     }
     
     private var inputArea: some View {
@@ -92,6 +95,12 @@ extension ChatView {
         if !textFieldText.isEmpty {
             chatViewModel.addMessage(text: textFieldText)
             textFieldText = ""
+        }
+    }
+    
+    private func scrollToLast(proxy: ScrollViewProxy) {
+        if let lastMessage = chatViewModel.messages.last {
+            proxy.scrollTo(lastMessage.id, anchor: .bottom)
         }
     }
 }
