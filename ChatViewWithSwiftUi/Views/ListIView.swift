@@ -24,7 +24,7 @@ struct ListIView: View {
 extension ListIView {
     private var header: some View {
         HStack {
-            Text("Talk")
+            Text("トーク")
                 .font(.title2.bold())
             
             Spacer()
@@ -61,7 +61,7 @@ extension ListIView {
                 .clipShape(Circle())
             
             VStack(alignment: .leading) {
-                Text("トーク")
+                Text("タイトル")
                     .foregroundColor(.primary)
                 Text(chat.recentMessageText)
                     .font(.footnote)
@@ -71,7 +71,7 @@ extension ListIView {
             
             Spacer()
             
-            Text("12/31")
+            Text(chat.recentMessageDateString)
                 .font(.footnote)
                 .foregroundColor(Color(uiColor: .secondaryLabel))
         }
