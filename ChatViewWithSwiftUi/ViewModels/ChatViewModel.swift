@@ -7,13 +7,13 @@
 
 import Foundation
 
-class ChatViewModel {
-    var chatData: [Chat] = []
-    var messages: [Message] = []
+class ChatViewModel: ObservableObject {
+    @Published var messages: [Message] = []
+//    var chatData: [Chat] = []
     
     init() {
-        chatData = fetchChatData()
-        messages = chatData[0].messages
+//        chatData = fetchChatData()
+        messages = fetchChatData()[0].messages
     }
     
     private func fetchChatData() -> [Chat] {
@@ -35,5 +35,17 @@ class ChatViewModel {
         } catch {
             fatalError("Failed to decode \(fileName).")
         }
+    }
+    
+    func addMessage(text: String) {
+        let newMessage = Message(
+            id: UUID().uuidString,
+            text: text,
+            user: User.currentUser,
+            date: Date().description,
+            readed: false
+        )
+        
+        messages.append(newMessage)
     }
 }

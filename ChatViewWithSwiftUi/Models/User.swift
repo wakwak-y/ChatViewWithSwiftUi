@@ -8,8 +8,13 @@
 import Foundation
 
 struct User: Decodable {
+    static var currentUser: User {
+        User(id: "1", name: " カーキ", image: "user01")
+    }
+    
     let id: String
     let name: String
     let image: String
-    var isCurrentUser: Bool { self.id == "1" }
+    
+    var isCurrentUser: Bool { self.id == User.currentUser.id }
 }
