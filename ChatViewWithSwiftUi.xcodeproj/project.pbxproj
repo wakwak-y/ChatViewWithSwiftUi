@@ -16,6 +16,7 @@
 		CAD377522B464C1E0004FC7A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD377512B464C1E0004FC7A /* Message.swift */; };
 		CAD377542B4650FB0004FC7A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD377532B4650FB0004FC7A /* Chat.swift */; };
 		CAD377572B46525E0004FC7A /* chatData.json in Resources */ = {isa = PBXBuildFile; fileRef = CAD377562B46525E0004FC7A /* chatData.json */; };
+		CAD3775A2B4663970004FC7A /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD377592B4663970004FC7A /* ChatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		CAD377512B464C1E0004FC7A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CAD377532B4650FB0004FC7A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		CAD377562B46525E0004FC7A /* chatData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chatData.json; sourceTree = "<group>"; };
+		CAD377592B4663970004FC7A /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				CAD377392B4588670004FC7A /* ChatViewWithSwiftUiApp.swift */,
-				CAD3774B2B4592220004FC7A /* Views */,
 				CAD3774C2B464A8D0004FC7A /* Models */,
+				CAD3774B2B4592220004FC7A /* Views */,
+				CAD377582B4663680004FC7A /* ViewModels */,
 				CAD377552B4652100004FC7A /* DataServices */,
 				CAD3773D2B45886A0004FC7A /* Assets.xcassets */,
 				CAD3773F2B45886A0004FC7A /* Preview Content */,
@@ -104,6 +107,14 @@
 				CAD377562B46525E0004FC7A /* chatData.json */,
 			);
 			path = DataServices;
+			sourceTree = "<group>";
+		};
+		CAD377582B4663680004FC7A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CAD377592B4663970004FC7A /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD3774E2B464AD20004FC7A /* User.swift in Sources */,
+				CAD3775A2B4663970004FC7A /* ChatViewModel.swift in Sources */,
 				CAD377542B4650FB0004FC7A /* Chat.swift in Sources */,
 				CAD377482B45890A0004FC7A /* ChatView.swift in Sources */,
 				CAD377522B464C1E0004FC7A /* Message.swift in Sources */,
