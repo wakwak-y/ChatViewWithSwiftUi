@@ -10,4 +10,6 @@ import Foundation
 struct Chat: Decodable, Identifiable {
     let id: String
     let messages: [Message]
+    
+    var recentMessageText: String { self.messages.last?.text ?? "" }
 }
