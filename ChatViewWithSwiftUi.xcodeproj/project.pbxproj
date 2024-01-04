@@ -15,6 +15,7 @@
 		CAD3774E2B464AD20004FC7A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3774D2B464AD20004FC7A /* User.swift */; };
 		CAD377522B464C1E0004FC7A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD377512B464C1E0004FC7A /* Message.swift */; };
 		CAD377542B4650FB0004FC7A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD377532B4650FB0004FC7A /* Chat.swift */; };
+		CAD377572B46525E0004FC7A /* chatData.json in Resources */ = {isa = PBXBuildFile; fileRef = CAD377562B46525E0004FC7A /* chatData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		CAD3774D2B464AD20004FC7A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CAD377512B464C1E0004FC7A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CAD377532B4650FB0004FC7A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		CAD377562B46525E0004FC7A /* chatData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chatData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				CAD377392B4588670004FC7A /* ChatViewWithSwiftUiApp.swift */,
 				CAD3774B2B4592220004FC7A /* Views */,
 				CAD3774C2B464A8D0004FC7A /* Models */,
+				CAD377552B4652100004FC7A /* DataServices */,
 				CAD3773D2B45886A0004FC7A /* Assets.xcassets */,
 				CAD3773F2B45886A0004FC7A /* Preview Content */,
 			);
@@ -93,6 +96,14 @@
 				CAD377532B4650FB0004FC7A /* Chat.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CAD377552B4652100004FC7A /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				CAD377562B46525E0004FC7A /* chatData.json */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD377412B45886A0004FC7A /* Preview Assets.xcassets in Resources */,
+				CAD377572B46525E0004FC7A /* chatData.json in Resources */,
 				CAD3773E2B45886A0004FC7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
