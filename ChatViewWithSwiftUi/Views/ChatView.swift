@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ChatView: View {
+    let chat: Chat
+    
     @State private var textFieldText: String = ""
     @FocusState private var textFieldFocused: Bool
     @Environment(\.dismiss) private var dismiss
-    
     @ObservedObject private var chatViewModel = ChatViewModel()
     
     var body: some View {
@@ -27,7 +28,7 @@ extension ChatView {
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(spacing: 0) {
-                    ForEach(chatViewModel.messages) { message in
+                    ForEach(chat.messages) { message in
                         MessageRow(message: message)
                     }
                 }
@@ -110,8 +111,4 @@ extension ChatView {
             proxy.scrollTo(lastMessage.id, anchor: .bottom)
         }
     }
-}
-
-#Preview {
-    ChatView()
 }

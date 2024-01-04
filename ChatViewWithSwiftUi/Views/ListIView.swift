@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ListIView: View {
+    @ObservedObject private var chatViewModel = ChatViewModel()
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -39,9 +41,9 @@ extension ListIView {
     private var list: some View {
         ScrollView {
             VStack {
-                ForEach(0..<10) { _ in
+                ForEach(chatViewModel.chatData) { chat in
                     NavigationLink {
-                        ChatView()
+                        ChatView(chat: chat)
                             .toolbar(.hidden)
                     } label: {
                         listRow
@@ -59,9 +61,9 @@ extension ListIView {
                 .clipShape(Circle())
             
             VStack(alignment: .leading) {
-                Text("Title")
+                Text("トーク")
                     .foregroundColor(.primary)
-                Text("New Message")
+                Text("最新のメッセージ")
                     .font(.footnote)
                     .foregroundColor(Color(uiColor: .secondaryLabel))
             }

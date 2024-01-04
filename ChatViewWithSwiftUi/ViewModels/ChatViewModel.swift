@@ -9,11 +9,11 @@ import Foundation
 
 class ChatViewModel: ObservableObject {
     @Published var messages: [Message] = []
-//    var chatData: [Chat] = []
+    var chatData: [Chat] = []
     
     init() {
-//        chatData = fetchChatData()
-        messages = fetchChatData()[0].messages
+        chatData = fetchChatData()
+        messages = chatData[0].messages
     }
     
     private func fetchChatData() -> [Chat] {
