@@ -107,7 +107,7 @@ extension ChatView {
     }
     
     private func scrollToLast(proxy: ScrollViewProxy) {
-        if let lastMessage = chatViewModel.messages.last {
+        if let lastMessage = chat.messages.last {
             proxy.scrollTo(lastMessage.id, anchor: .bottom)
         }
     }
